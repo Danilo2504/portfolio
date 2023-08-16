@@ -5,24 +5,24 @@
 @layer base {
   :root {
     /* Colors */
-    --main-color: "#09192F";
-    --primary-color: "#59E3A7";
-    --secondary-color: "#0A2140";
-    --text-color: "#FFFFFE";
+    --main-color: #59e3a7;
+    --primary-color: #09192f;
+    --secondary-color: #0a2140;
+    --white-color: #fffffe;
 
-    --color-white: "#E9E9E9";
-    --color-green: "#ACB9C6";
+    --secondary-white: #e9e9e9;
+    --color-grey: #acb9c6;
 
     /* Sizes */
-    --big-size: 80;
-    --medium-big-size: 30;
-    --medium-size: 25;
-    --medium-small-size: 20;
-    --small-size: 15;
+    --big-size: 80px;
+    --medium-big-size: 30px;
+    --medium-size: 25px;
+    --medium-small-size: 20px;
+    --small-size: 15px;
 
-    --text-size: 22;
-    --card-text-size: 16;
-    --form-text-size: 18;
+    --text-size: 22px;
+    --card-text-size: 16px;
+    --form-text-size: 18px;
 
     /* Weights */
     --regular: "300";
@@ -30,14 +30,20 @@
     --bold: "700";
 
     /* Paddings */
-    --header-hz-padding: 120;
-    --sidebars-hz-padding: 40;
-    --section-top-padding: 120;
-    --title-vl-padding: 80;
+    --header-hz-padding: 120px;
+    --sidebars-hz-padding: 40px;
+    --section-top-padding: 120px;
+    --title-vl-padding: 80px;
   }
 }
 
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  color: var(--text-color);
-  background: var(--main-color);
+  list-style: none;
+  text-decoration: none;
 }

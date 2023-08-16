@@ -14,10 +14,11 @@ module.exports = {
     },
     colors: {
       main: "var(--main-color)",
-      primary: "var(--primary-color",
-      text: "var(--text-color)",
-      white: "var(--color-white)",
-      green: "var(--color-green)",
+      primary: "var(--primary-color)",
+      secondary: "var(--secondary-color)",
+      white: "var(--white-color)",
+      white_sceondary: "var(--secondary-white)",
+      grey: "var(--color-grey)",
     },
     fontSize: {
       big: "var(--big-size)",
