@@ -22,7 +22,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${rubik.variable} ${poppins.variable}`}>
+      <body
+        className={`${rubik.variable} ${poppins.variable} h-screen bg-primary`}
+      >
         {children}
       </body>
     </html>
