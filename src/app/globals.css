@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Colors */
+    --main-color: "#09192F";
+    --primary-color: "#59E3A7";
+    --secondary-color: "#0A2140";
+    --text-color: "#FFFFFE";
+
+    --color-white: "#E9E9E9";
+    --color-green: "#ACB9C6";
+
+    /* Sizes */
+    --big-size: 80;
+    --medium-big-size: 30;
+    --medium-size: 25;
+    --medium-small-size: 20;
+    --small-size: 15;
+
+    --text-size: 22;
+    --card-text-size: 16;
+    --form-text-size: 18;
+
+    /* Weights */
+    --regular: "300";
+    --medium: "400";
+    --bold: "700";
+
+    /* Paddings */
+    --header-hz-padding: 120;
+    --sidebars-hz-padding: 40;
+    --section-top-padding: 120;
+    --title-vl-padding: 80;
+  }
+}
+
+body {
+  color: var(--text-color);
+  background: var(--main-color);
+}
