@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-rubik)"],
-        mono: ["var(--font-poppins)"],
+        rubik: ["var(--font-rubik)"],
+        poppins: ["var(--font-poppins)"],
       },
     },
     colors: {
@@ -17,7 +17,7 @@ module.exports = {
       primary: "var(--primary-color)",
       secondary: "var(--secondary-color)",
       white: "var(--white-color)",
-      white_sceondary: "var(--secondary-white)",
+      white_secondary: "var(--secondary-white)",
       grey: "var(--color-grey)",
     },
     fontSize: {

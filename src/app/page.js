@@ -1,9 +1,9 @@
-import Navbar from "./PageComponents/Navbar";
+import HomePage from "./PageComponents/HomePage";
 
 export default function Home() {
   return (
     <main>
-      <Navbar />
+      <HomePage />
     </main>
   );
 }
