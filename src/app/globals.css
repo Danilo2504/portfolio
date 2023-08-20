@@ -14,7 +14,7 @@
     --color-grey: #acb9c6;
 
     /* Sizes */
-    --big-size: 60px;
+    --big-size: 50px;
     --medium-big-size: 24px;
     --medium-size: 20px;
     --medium-small-size: 18px;
@@ -25,15 +25,14 @@
     --form-text-size: 18px;
 
     /* Weights */
-    --regular: "300";
-    --medium: "400";
-    --bold: "700";
+    --regular: 300;
+    --medium: 400;
+    --bold: 700;
 
-    /* Paddings */
-    --header-hz-padding: 120px;
-    --sidebars-hz-padding: 40px;
-    --section-top-padding: 120px;
-    --title-vl-padding: 80px;
+    /* Line height */
+    --big: 71px;
+    --medium: 36px;
+    --small: 24px;
   }
 }
 
@@ -50,4 +49,15 @@ body {
 
 .writing-vertical {
   writing-mode: vertical-lr;
+}
+
+h1,
+h2,
+h3,
+h6,
+label,
+span {
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
