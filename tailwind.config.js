@@ -21,7 +21,7 @@ module.exports = {
       grey: "var(--color-grey)",
     },
     fontSize: {
-      big: "var(--big-size)",
+      big: ["var(--big-size)", "var(--big)"],
       medium_big: "var(--medium-big-size)",
       medium: "var(--medium-size)",
       medium_small: "var(--medium-small-size)",
@@ -34,6 +34,10 @@ module.exports = {
       regular: "var(--regular)",
       medium: "var(--medium)",
       bold: "var(--bold)",
+    },
+    lineHeight: {
+      medium: "var(--medium)",
+      small: "var(--small)",
     },
   },
   plugins: [],
