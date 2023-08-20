@@ -14,10 +14,10 @@
     --color-grey: #acb9c6;
 
     /* Sizes */
-    --big-size: 80px;
-    --medium-big-size: 30px;
-    --medium-size: 25px;
-    --medium-small-size: 20px;
+    --big-size: 60px;
+    --medium-big-size: 24px;
+    --medium-size: 20px;
+    --medium-small-size: 18px;
     --small-size: 15px;
 
     --text-size: 22px;
@@ -46,4 +46,8 @@ html {
 body {
   list-style: none;
   text-decoration: none;
+}
+
+.writing-vertical {
+  writing-mode: vertical-lr;
 }
