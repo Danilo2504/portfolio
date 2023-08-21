@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon2.png" />
       </head>
       <body
         className={`${rubik.variable} ${poppins.variable} h-screen bg-primary`}
