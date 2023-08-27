@@ -1,11 +1,11 @@
 import React from "react";
 import CodeTitle from "./CodeTitle";
 
-function SectionBar() {
+function SectionBar({ title }) {
   return (
     <div className="flex justify-between items-center gap-8">
       <div className="border-b-2 border-white w-full" />
-      <CodeTitle title={"Sobre Mi"} />
+      <CodeTitle title={title} />
     </div>
   );
 }

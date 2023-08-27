@@ -1,16 +1,18 @@
 import React from "react";
-import SectionBar from "../Components/Common/SectionBar";
-import PageLayout from "../Components/Layouts/PageLayout";
-import CodeTitle from "../Components/Common/CodeTitle";
-import Spacer from "../Components/Common/Spacer";
 import { BackCard, FrontCard, OtherCard } from "../Components/Common/SkillCard";
 import { skillBack, skillFront, skillOther } from "../Data/skillsData";
+import PageContainer from "../Components/Layouts/PageContainer";
+import PageLayout from "../Components/Layouts/PageLayout";
+import SectionBar from "../Components/Common/SectionBar";
+import CodeTitle from "../Components/Common/CodeTitle";
+import Spacer from "../Components/Common/Spacer";
 
 function AboutPage() {
   return (
     <PageLayout>
-      <div className="px-10 pb-36">
-        <SectionBar />
+      <a id="about-page" />
+      <PageContainer>
+        <SectionBar title={"Sobre Mi"} />
         <div className="pt-24 px-10 flex flex-col">
           <CodeTitle title={"Mi historia"} />
           <Spacer paddingY={20} />
@@ -46,7 +48,7 @@ function AboutPage() {
             />
           </div>
         </div>
-      </div>
+      </PageContainer>
     </PageLayout>
   );
 }

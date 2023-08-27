@@ -5,6 +5,7 @@ import PageLayout from "../Components/Layouts/PageLayout";
 function HomePage() {
   return (
     <PageLayout>
+      <a id="home-page" />
       <div className="flex justify-between items-center pt-24 px-32">
         <div className="flex flex-col font-rubik">
           <h6 className="text-grey text-[15px] leading-small mb-5">Hola</h6>

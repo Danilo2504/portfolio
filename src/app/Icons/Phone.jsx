@@ -5,7 +5,7 @@ const Phone = () => (
     width={30}
     height={30}
     viewBox="0 0 40 41"
-    className={`hover:fill-main fill-grey`}
+    className="ease-in-color"
   >
     <path
       fillRule="evenodd"

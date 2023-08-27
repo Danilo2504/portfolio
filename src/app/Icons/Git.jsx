@@ -1,11 +1,11 @@
 import * as React from "react";
-const Git = () => (
+const Git = ({ height, width }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={30}
-    height={30}
+    width={width}
+    height={height}
     viewBox="0 0 40 41"
-    className={`hover:fill-main fill-grey`}
+    className="ease-in-color"
   >
     <path
       fillRule="evenodd"
