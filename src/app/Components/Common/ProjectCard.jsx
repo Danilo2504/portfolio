@@ -15,7 +15,7 @@ function ProjectCard({
   projectPath,
 }) {
   return (
-    <div className="grid grid-cols-2 h-[350px] w-full relative mb-14">
+    <div className="grid grid-cols-2 h-[350px] w-full relative">
       <div className="flex items-center">
         {isReversed ? (
           <div className="absolute left-9">

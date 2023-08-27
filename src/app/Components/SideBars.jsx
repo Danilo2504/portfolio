@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import SocialItem from "./Common/SocialItem";
 import { socialLinks } from "../Data/socialLinks";
+import { copyToClipboard } from "../Utils/copyToClipboard";
 
 function SideBars() {
   const [isHide, setIsHide] = useState(false);
@@ -41,8 +41,8 @@ function SideBars() {
         }`}
       >
         <div className="h-full flex flex-col justify-center items-center flex-initial gap-8">
-          {socialLinks.slice(2, 4).map(({ id, path, svg }) => {
-            return <SocialItem key={id} path={path} svg={svg} />;
+          {socialLinks.map(({ id, path, svg }) => {
+            return <SocialItem key={id} path={path} svg={svg} hasLink />;
           })}
           <div className="border-l-2 border-grey h-full" />
         </div>
@@ -60,12 +60,12 @@ function SideBars() {
         }`}
       >
         <div className="h-full flex flex-col justify-center items-center flex-initial gap-8">
-          <Link
-            href="#"
-            className="hover:text-main ease-in-color writing-vertical w-5 text-grey text-small font-poppins font-regular tracking-widest"
+          <a
+            onClick={() => copyToClipboard("danilobautista2004@gmail.com")}
+            className="hover:text-main cursor-pointer ease-in-color writing-vertical w-5 text-grey text-small font-poppins font-regular tracking-widest"
           >
             danilobautista2004@gmail.com
-          </Link>
+          </a>
 
           <div className="border-l-2 border-grey top-0 h-full" />
         </div>

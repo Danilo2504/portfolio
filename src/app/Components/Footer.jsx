@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { socialLinks } from "../Data/socialLinks";
+import { contactLinks, socialLinks } from "../Data/socialLinks";
 import { optionTexts } from "../Data/optionsTexts";
 import ListOption from "./Common/ListOption";
 import SocialItem from "./Common/SocialItem";
@@ -11,7 +12,7 @@ function Footer() {
     <div id="footer" className="bg-secondary flex justify-center z-40">
       <div className="h-[250px] w-full mx-auto px-32 py-12 max-w-[1512px] flex flex-col justify-between">
         <div className="flex justify-between items-start">
-          <Link href="#">
+          <Link href="#home-page">
             <Image
               src="/logo.svg"
               width={250}
@@ -20,8 +21,11 @@ function Footer() {
             />
           </Link>
           <ul className="max-w-[460px] w-full flex justify-between items-center">
+            {contactLinks.map(({ id, text, svg }) => {
+              return <SocialItem key={id} svg={svg} text={text} />;
+            })}
             {socialLinks.map(({ id, path, svg }) => {
-              return <SocialItem key={id} path={path} svg={svg} />;
+              return <SocialItem key={id} path={path} svg={svg} hasLink />;
             })}
           </ul>
         </div>
