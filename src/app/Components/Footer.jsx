@@ -8,8 +8,8 @@ import SocialItem from "./Common/SocialItem";
 
 function Footer() {
   return (
-    <div id="footer" className="flex justify-center z-40">
-      <div className="bg-secondary h-[250px] w-full mx-auto px-32 py-12 max-w-[1512px] flex flex-col justify-between">
+    <div id="footer" className="bg-secondary flex justify-center z-40">
+      <div className="h-[250px] w-full mx-auto px-32 py-12 max-w-[1512px] flex flex-col justify-between">
         <div className="flex justify-between items-start">
           <Link href="#">
             <Image

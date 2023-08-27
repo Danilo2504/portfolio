@@ -51,9 +51,27 @@ body {
   writing-mode: vertical-lr;
 }
 
+.ease-in-color {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.link-svg > svg {
+  fill: var(--color-grey);
+}
+
+.link-svg:hover > svg {
+  fill: var(--main-color);
+}
+
 h1,
 h2,
 h3,
+h4,
 h6,
 label,
 span {

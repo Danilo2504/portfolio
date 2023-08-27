@@ -1,6 +1,6 @@
 export const optionTexts = [
-  { id: 1, path: "#", label: "Inicio" },
-  { id: 2, path: "#", label: "Sobre Mi" },
-  { id: 3, path: "#", label: "Proyectos" },
-  { id: 4, path: "#", label: "Contacto" },
+  { id: "home-page", path: "#", label: "Inicio" },
+  { id: "about-page", path: "#", label: "Sobre Mi" },
+  { id: "project-page", path: "#", label: "Proyectos" },
+  { id: "contact-page", path: "#", label: "Contacto" },
 ];
