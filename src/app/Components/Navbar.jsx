@@ -41,7 +41,7 @@ function Navbar() {
     <div className="z-50 flex justify-center fixed top-0 right-0 left-0">
       <div className="bg-primary h-20 w-full mx-auto px-32 max-w-[1512px] flex justify-between items-center">
         <div className="min-w-[300px] inline-flex justify-start">
-          <Link href="#">
+          <Link href="#home-page">
             <Image
               src="/logo.svg"
               width={250}
@@ -67,7 +67,7 @@ function Navbar() {
                 className={`cursor-pointer hover:text-main ease-in-color ${
                   isActive === "contact-page" ? "text-main" : "text-white"
                 }`}
-                href="#"
+                href="#contact-page"
               >
                 Contactos
               </Link>

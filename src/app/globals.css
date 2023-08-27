@@ -60,6 +60,10 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+.input::placeholder {
+  font-weight: 200;
+}
+
 .link-svg > svg {
   fill: var(--color-grey);
 }
@@ -78,4 +82,17 @@ span {
   font-weight: inherit;
   font-size: inherit;
   font-family: inherit;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  opacity: 0.5;
 }
