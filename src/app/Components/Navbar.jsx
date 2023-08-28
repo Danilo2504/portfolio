@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { optionTexts } from "../Data/optionsTexts";
 import ListOption from "./Common/ListOption";
+import Dropdown from "./Common/Dropdown";
+import { languageOptions } from "../Data/languageOptions";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(null);
@@ -40,7 +42,7 @@ function Navbar() {
   return (
     <div className="z-50 flex justify-center fixed top-0 right-0 left-0">
       <div className="bg-primary h-20 w-full mx-auto px-32 max-w-[1512px] flex justify-between items-center">
-        <div className="min-w-[300px] inline-flex justify-start">
+        <div className="min-w-[330px] gap-8 inline-flex justify-between">
           <Link href="#home-page">
             <Image
               src="/logo.svg"
@@ -49,6 +51,7 @@ function Navbar() {
               alt="Logo de portafolio"
             />
           </Link>
+          <Dropdown options={languageOptions} />
         </div>
         <ul className="flex justify-between items-center gap-14 text-white text-medium_small">
           {optionTexts.slice(0, 3).map(({ id, path, label }) => {
