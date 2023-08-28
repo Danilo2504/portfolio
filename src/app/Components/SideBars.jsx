@@ -34,10 +34,8 @@ function SideBars() {
   function Leftbar() {
     return (
       <div
-        className={`h-2/4 pl-8 fixed left-0 bottom-0 z-40 ${
-          isHide
-            ? "translate-y-full ease-out duration-300"
-            : "translate-y-0 ease-in duration-200"
+        className={`h-2/4 pl-8 fixed left-0 bottom-0 z-40 transition-opacity ${
+          isHide ? "fade-hidden" : "fade-visible"
         }`}
       >
         <div className="h-full flex flex-col justify-center items-center flex-initial gap-8">
@@ -53,10 +51,8 @@ function SideBars() {
   function Rightbar() {
     return (
       <div
-        className={`h-2/4 pr-8 fixed right-0 bottom-0 z-40 ${
-          isHide
-            ? "translate-y-full ease-out duration-300"
-            : "translate-y-0 ease-in duration-200"
+        className={`h-2/4 pr-8 fixed right-0 bottom-0 z-40 transition-opacity ${
+          isHide ? "fade-hidden" : "fade-visible"
         }`}
       >
         <div className="h-full flex flex-col justify-center items-center flex-initial gap-8">
@@ -66,7 +62,6 @@ function SideBars() {
           >
             danilobautista2004@gmail.com
           </a>
-
           <div className="border-l-2 border-grey top-0 h-full" />
         </div>
       </div>
@@ -74,7 +69,7 @@ function SideBars() {
   }
 
   return (
-    <div className="flex justify-center">
+    <div className="relative flex justify-center">
       <Leftbar />
       <Rightbar />
     </div>
