@@ -12,15 +12,17 @@ import Email from "../Icons/Email";
 import LinkedIn from "../Icons/LinkedIn";
 import Git from "../Icons/Git";
 import { copyToClipboard } from "../Utils/copyToClipboard";
+import useTranslation from "../Hooks/useTranslation";
 
 function ContactPage() {
+  const { t } = useTranslation();
   return (
     <PageLayout>
       <a id="contact-page" />
       <PageContainer>
-        <SectionBar title={"Contact"} />
+        <SectionBar title={t("contact_page.title_section")} />
         <div className="pt-24 px-10 flex flex-col">
-          <CodeTitle title={"Mi Contacto"} />
+          <CodeTitle title={t("contact_page.code_title")} />
         </div>
         <Spacer paddingY={40} />
         <div className="px-[140px] flex justify-between items-center">

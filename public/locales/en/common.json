@@ -1,0 +1,46 @@
+{
+  "navigation": {
+    "option_1": "Home",
+    "option_2": "About me",
+    "option_3": "Projects",
+    "option_4": "Contact"
+  },
+  "others": {
+    "toast_message": "Copied!"
+  },
+  "home_page": {
+    "title_small": "Hello there!",
+    "title_main_span": "I’m ",
+    "title_subtitle": "And I’m a front-end developer"
+  },
+  "about_page": {
+    "title_section": "Mi Profile",
+    "paragraph_1": "I am passionate about web development with a meticulous attention to detail. I am always in search of new challenges and learning opportunities. My focus is on creating engaging and sophisticated digital experiences for users",
+    "paragraph_2": "My first encounter with programming took place in school, where I started creating simple websites using HTML and CSS. I was fascinated by the results, so I decided to dive into self-directed learning, constantly seeking to improve my skills and embrace best practices in interface design and user experience",
+    "paragraph_3": "Always excited about what the future of web development holds, I am dedicated to ongoing growth and making a positive impact in the digital world",
+    "title_section_2": "Skills",
+    "card_title": "Languages",
+    "card_description_1": "Spanish",
+    "card_description_2": "English"
+  },
+  "projects_page": {
+    "title_section": "Projects",
+    "card_1": {
+      "card_body": "A school project that came to life. I collaborated with a team to develop a functional website tailored for our school. Designed for administrators, students, and parents, the site provides essential school information such as history, events, schedules, and important documents. Together, we turned the vision into reality"
+    },
+    "card_2": {
+      "card_body": "It's a financial management app for small businesses. I led the creation of the landing page, designed a responsive and mobile-friendly experience, and utilized cutting-edge technologies in development, including Next.js. Furthermore, I implemented translations for enhanced accessibility, making it available in Spanish, English, and Portuguese"
+    }
+  },
+  "contact_page": {
+    "title_section": "Contact",
+    "code_title": "My Contact",
+    "form": {
+      "form_title": "Send me a message",
+      "input_placeholder_1": "Your name",
+      "input_placeholder_2": "Your email",
+      "input_placeholder_3": "Your message",
+      "button_text": "Send"
+    }
+  }
+}

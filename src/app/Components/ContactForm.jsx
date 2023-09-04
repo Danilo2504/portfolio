@@ -1,10 +1,12 @@
 "use client";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
+import useTranslation from "../Hooks/useTranslation";
 import InputText from "./Common/InputText";
 import Spacer from "./Common/Spacer";
 import Button from "./Common/Button";
 
 function ContactForm() {
+  const { t } = useTranslation();
   const [form, setForm] = useState({ subject: "", email: "", body: "" });
 
   const handleInputs = (name, value) => {
@@ -29,31 +31,35 @@ function ContactForm() {
     <form>
       <div className="bg-secondary w-[420px] p-8">
         <h4 className="text-white font-poppins font-medium text-medium_big">
-          Enviame un mensaje
+          {t("contact_page.form.form_title")}
         </h4>
         <Spacer paddingY={20} />
         <InputText
-          placeholder={"Ingrese el asunto"}
+          placeholder={t("contact_page.form.input_placeholder_1")}
           inputType={"text"}
           value={form.subject}
           onChange={(e) => handleInputs("subject", e.target.value)}
         />
         <Spacer paddingY={15} />
         <InputText
-          placeholder={"Ingrese su email"}
+          placeholder={t("contact_page.form.input_placeholder_2")}
           inputType={"email"}
           value={form.email}
           onChange={(e) => handleInputs("email", e.target.value)}
         />
         <Spacer paddingY={15} />
         <InputText
-          placeholder={"Ingrese su mensaje"}
+          placeholder={t("contact_page.form.input_placeholder_3")}
           isTextArea
           value={form.body}
           onChange={(e) => handleInputs("body", e.target.value)}
         />
         <Spacer paddingY={10} />
-        <Button label={"Enviar"} isValid={formValidator} values={form} />
+        <Button
+          label={t("contact_page.form.button_text")}
+          isValid={formValidator}
+          values={form}
+        />
       </div>
     </form>
   );
