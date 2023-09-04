@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: 0,
     title: "E-Skuly",
-    description: "Lorem ipsum dolor",
+    description: "projects_page.card_1.card_body",
     imagePath: "/la-suiza.png",
     repoPath: "https://github.com/brandonporcel/confederacionsuiza.git",
     projectPath: "https://et26.edu.ar/",
@@ -11,7 +11,7 @@ export const projectsData = [
   {
     id: 1,
     title: "Maui App Landing",
-    description: "Lorem ipsum",
+    description: "projects_page.card_2.card_body",
     imagePath: "/maui-landing.png",
     repoPath: "https://github.com/billybautista/maui-app-landing.git",
     projectPath: "https://maui-app.com/",

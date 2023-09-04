@@ -6,8 +6,10 @@ import { optionTexts } from "../Data/optionsTexts";
 import ListOption from "./Common/ListOption";
 import Dropdown from "./Common/Dropdown";
 import { languageOptions } from "../Data/languageOptions";
+import useTranslation from "../Hooks/useTranslation";
 
 function Navbar() {
+  const { t } = useTranslation();
   const [isActive, setIsActive] = useState(null);
   useEffect(() => {
     const observerOptions = {
@@ -72,7 +74,7 @@ function Navbar() {
                 }`}
                 href="#contact-page"
               >
-                Contactos
+                {t("navigation.option_4")}
               </Link>
             </div>
           </li>

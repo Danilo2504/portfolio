@@ -20,7 +20,7 @@ export const skillBack = {
 };
 
 export const skillOther = {
-  title: "Idiomas",
+  title: "about_page.card_title",
   options: ["Inglés", "Español"],
   svgIcons: [{ svg: Flag }],
   radius: "2.5px 15px 15px 2.5px",

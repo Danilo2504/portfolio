@@ -1,0 +1,46 @@
+{
+  "navigation": {
+    "option_1": "Inicio",
+    "option_2": "Sobre mi",
+    "option_3": "Proyectos",
+    "option_4": "Contacto"
+  },
+  "others": {
+    "toast_message": "¡Copiado!"
+  },
+  "home_page": {
+    "title_small": "¡Hola!",
+    "title_main_span": "Soy ",
+    "title_subtitle": "Y soy un desarrollador front-end"
+  },
+  "about_page": {
+    "title_section": "Mi perfil",
+    "paragraph_1": "Soy un apasionado del desarrollo web con una atención meticulosa a los detalles. Siempre estoy en busca de nuevos desafíos y oportunidades de aprendizaje. Mi enfoque se centra en crear experiencias digitales atractivas y sofisticadas para los usuarios",
+    "paragraph_2": "Mi primer encuentro con la programación tuvo lugar en la escuela, donde comencé a crear sitios web simples utilizando HTML y CSS.  Quedé fascinado por los resultados, así que decidí sumergirme en el aprendizaje autodidacta, buscando constantemente mejorar mis habilidades y adoptar las mejores prácticas en el diseño de interfaces y la experiencia del usuario",
+    "paragraph_3": "Siempre emocionado por lo que el futuro del desarrollo web tiene reservado, me dedico a continuar creciendo y creando un impacto positivo en el mundo digital",
+    "title_section_2": "Habilidades",
+    "card_title": "Idiomas",
+    "card_description_1": "Español",
+    "card_description_2": "Inglés"
+  },
+  "projects_page": {
+    "title_section": "Proyectos",
+    "card_1": {
+      "card_body": "Un proyecto escolar que cobró vida. Trabajé con un equipo para desarrollar un sitio web funcional destinado a nuestra escuela. Diseñado para directivos, alumnos y padres, el sitio ofrece información esencial sobre la escuela como la historia, eventos, horarios, y documentos importantes. Juntos, transformamos la visión en realidad"
+    },
+    "card_2": {
+      "card_body": "Es una app de gestión financiera para empresas pequeñas. Dirigí la creación de la landing page, diseñe la experiencia para que se responsive y mobile y utilicé tecnologías de vanguardia en el desarrollo, tales como NextJS. Además, implementé traducciones para una mayor accesibilidad, disponible en español, inglés y portugues"
+    }
+  },
+  "contact_page": {
+    "title_section": "Contacto",
+    "code_title": "Mi Contacto",
+    "form": {
+      "form_title": "Enviame un mensaje",
+      "input_placeholder_1": "Tu nombre",
+      "input_placeholder_2": "Tu e-mail",
+      "input_placeholder_3": "Tu mensaje",
+      "button_text": "Enviar"
+    }
+  }
+}

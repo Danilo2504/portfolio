@@ -1,10 +1,11 @@
 "use client";
+import React, { useState, useEffect, useRef } from "react";
+import useTranslation from "@/app/Hooks/useTranslation";
 import ArrowDown from "@/app/Icons/ArrowDown";
 import Image from "next/image";
-import React, { useState, useEffect, useRef } from "react";
-import Spacer from "./Spacer";
 
 function Dropdown({ options = [] }) {
+  const { changeLanguage } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(options[0]);
   const dropdownRef = useRef(null);
@@ -27,13 +28,14 @@ function Dropdown({ options = [] }) {
 
   const handleOptionSelect = (selected) => {
     setSelectedOption(selected);
+    changeLanguage(selected.locale);
     setIsOpen(false);
   };
 
   return (
     <div className="relative inline-block" ref={dropdownRef}>
       <div
-        className="cursor-pointer flex justify-between items-center gap-2"
+        className="cursor-pointer flex justify-between w-full h-full items-center gap-2"
         onClick={toggleDropdown}
       >
         <Image
@@ -62,7 +64,8 @@ function Dropdown({ options = [] }) {
                 <div className="relative h-[25px] w-[25px]">
                   <Image
                     src={item.imagePath}
-                    layout="fill"
+                    fill={true}
+                    sizes="100vw, 50vw"
                     alt="Icono de idioma"
                   />
                 </div>

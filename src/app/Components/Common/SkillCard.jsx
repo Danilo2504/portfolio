@@ -25,7 +25,7 @@ export function FrontCard({ title, radius, svgIcons, options }) {
         })}
       </div>
       <Spacer paddingY={15} />
-      <div className="flex flex-row flex-wrap text-small gap-1">
+      <div className="flex flex-row flex-wrap justify-between text-small gap-1">
         {options.map((item, index) => {
           return <label key={index}>{item}</label>;
         })}
@@ -44,7 +44,7 @@ export function BackCard({ title, radius, svgIcons, options }) {
         })}
       </div>
       <Spacer paddingY={15} />
-      <div className="flex flex-row flex-wrap justify-center text-small gap-1">
+      <div className="flex flex-row flex-wrap justify-center text-small gap-4">
         {options.map((item, index) => {
           return <label key={index}>{item}</label>;
         })}
@@ -63,7 +63,7 @@ export function OtherCard({ title, radius, svgIcons, options }) {
         })}
       </div>
       <Spacer paddingY={15} />
-      <div className="flex flex-row flex-wrap justify-center text-small gap-1">
+      <div className="flex flex-row flex-wrap justify-center text-small gap-4">
         {options.map((item, index) => {
           return <label key={index}>{item}</label>;
         })}
