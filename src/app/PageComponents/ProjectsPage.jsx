@@ -17,25 +17,20 @@ function ProjectsPage() {
         <SectionBar title={t("projects_page.title_section")} />
         <div className="pt-24 px-10 flex flex-col">
           {projectsData.map(
-            ({
-              id,
-              title,
-              description,
-              imagePath,
-              repoPath,
-              projectPath,
-              techs,
-            }) => {
+            (
+              { title, description, imagePath, repoPath, projectPath, techs },
+              index
+            ) => {
               return (
                 <ProjectCard
-                  key={id}
+                  key={index}
                   title={title}
                   description={t(description)}
                   imagePath={imagePath}
                   repoPath={repoPath}
                   projectPath={projectPath}
                   techs={techs}
-                  isReversed={isPair(id)}
+                  isReversed={isPair(index)}
                 />
               );
             }

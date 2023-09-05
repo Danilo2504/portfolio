@@ -54,11 +54,11 @@ function Dropdown({ options = [] }) {
             isOpen ? "fade-visible" : "fade-hidden"
           }`}
         >
-          {options.map((item) => {
+          {options.map((item, index) => {
             return (
               <li
                 className="cursor-pointer flex items-center gap-4 px-3 py-3 ease-in-color li-language text-white"
-                key={item.id}
+                key={index}
                 onClick={() => handleOptionSelect(item)}
               >
                 <div className="relative h-[25px] w-[25px]">

@@ -21,17 +21,17 @@ function Footer() {
             />
           </Link>
           <ul className="max-w-[460px] w-full flex justify-between items-center">
-            {contactLinks.map(({ id, text, svg }) => {
-              return <SocialItem key={id} svg={svg} text={text} />;
+            {contactLinks.map(({ text, svg }, index) => {
+              return <SocialItem key={index} svg={svg} text={text} />;
             })}
-            {socialLinks.map(({ id, path, svg }) => {
-              return <SocialItem key={id} path={path} svg={svg} hasLink />;
+            {socialLinks.map(({ path, svg }, index) => {
+              return <SocialItem key={index} path={path} svg={svg} hasLink />;
             })}
           </ul>
         </div>
         <ul className="flex justify-between items-center text-white text-medium_small">
-          {optionTexts.map(({ id, path, label }) => {
-            return <ListOption key={id} path={path} label={label} />;
+          {optionTexts.map(({ path, label }, index) => {
+            return <ListOption key={index} path={path} label={label} />;
           })}
         </ul>
       </div>

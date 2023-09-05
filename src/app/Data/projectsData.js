@@ -1,6 +1,5 @@
 export const projectsData = [
   {
-    id: 0,
     title: "E-Skuly",
     description: "projects_page.card_1.card_body",
     imagePath: "/la-suiza.png",
@@ -9,7 +8,6 @@ export const projectsData = [
     techs: ["React", "Styled Components", "React Router"],
   },
   {
-    id: 1,
     title: "Maui App Landing",
     description: "projects_page.card_2.card_body",
     imagePath: "/maui-landing.png",
